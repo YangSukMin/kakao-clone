@@ -6,22 +6,26 @@
     <meta name="decriptoin" content="안녕하세요" />
     <title>boxmodel</title>
     <style>
-    
+      body,
+      html {
+        height: 400%;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 400%;
+        background-color: red;
+      }
+      .abs-box {
+        width: 400px;
+        height: 400px;
+        background-color: yellow;
+      }
     </style>
   </head>
-  <body>
-    
-    <section>
-      <header id="headerNumberone" class="defaultheader">
-        <h1>제목이야</h1>
-        <p>아녕하삼ㄴ라ㅗㅁ</p>
-        <a href="#">fake</a>
-      </header>
-    <section>
-      
-      <div>
-          <header id="defaultheader" class="defaultheader">제목아님</header>
-      </div>
-
-  </body>
 </html>
+<body>
+  <div calss="abs-box"></div>
+    <div calss="abs-child"></div>
+  </div>
+</body>
