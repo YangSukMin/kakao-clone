@@ -1,31 +1,63 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="author" content="석민" />
-    <meta name="decriptoin" content="안녕하세요" />
-    <title>boxmodel</title>
-    <style>
-      body,
-      html {
-        height: 400%;
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        height: 400%;
-        background-color: red;
-      }
-      .abs-box {
-        width: 400px;
-        height: 400px;
+<html lang="en">
+  <html>
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>boxmodel</title>
+      <style>
+        body,
+        html {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+        }
+        body {
+          height: 400%;
+          background-color: red;
+        }
+        /* postion fixed
+         #boxone{
+        height: 300px;
+        width: 300px;
         background-color: yellow;
+        position: static;
       }
-    </style>
-  </head>
+      #boxtwo{
+        height: 300px;
+        width: 300px;
+        background-color: green;
+        position: fixed;
+        bottom:30%;
+        left:0;
+      }*/
+        .abs-box {
+          width: 400px;
+          height: 400px;
+          background-color: yellow;
+          position: relative;
+        }
+        .abs-child {
+          width: 100px;
+          height: 100px;
+          background-color: green;
+          position: absolute;
+          right: 10px;
+          top: 10px;
+        }
+      </style>
+    </head>
+  </html>
+  <body>
+    <!--position fixed
+    <div id="boxone"></div>
+    <div calss="box-child"></div>
+    <div id="boxtwo"></div>
+    <div calss="box-child"></div>
+    !-->
+    <div class="abs-box">
+      <div class="abs-child"></div>
+    </div>
+  </body>
 </html>
-<body>
-  <div calss="abs-box"></div>
-    <div calss="abs-child"></div>
-  </div>
-</body>
